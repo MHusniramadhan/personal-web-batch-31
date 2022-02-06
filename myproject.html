@@ -1,0 +1,127 @@
+
+<html>
+    <head>
+      <title>MY PROJECT</title>
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <!-- NavBar -->
+      <nav>
+        <div class="left-side">
+          <a href="index.html">
+            <img src="assets/logo.png" alt="logo" />
+          </a>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="myproject.html" class="list-active">My Project</a>
+            </li>
+          </ul>
+        </div>
+        <div class="right-side">
+          <a href="contact.html"> Contact Me </a>
+        </div>
+      </nav>
+  
+      <!-- project -->
+      <!-- Form -->
+      <div class="project">
+        <div class="project-form">
+          <div class="form-container">
+            <form onsubmit="addProject(event)">
+              <h1>ADD MY PROJECT</h1>
+              <div>
+                <label for="input-project-name">Project Name</label>
+                <input id="input-project-name" />
+              </div>
+                  <div class="datatimer">
+                     <div>
+                     <label for="input-project-stardate">Star Date</label>
+                     <input type="date" id="input-project-stardate">
+                     </div>
+                     <div class="date-right">
+                     <label class="endname" for="input-project-enddate">End Date</label>
+                     <input type="date" id="input-project-enddate">
+                     </div>
+                  </div>
+                <div>
+                <label for="input-project-content">Description</label>
+                <textarea id="input-project-content"></textarea>
+              </div>
+              <H3>Tecnologies<h3>
+               <div class="checkbox-detail">
+                 <div class="category1">
+                   <input type="checkbox" id="input-project-checkbox" name="boxes" value="node-js.png">
+                   <label>Node js</label>
+                 </div>
+                 <div class="category1">
+                   <input type="checkbox" id="input-project-checkbox" name="boxes" value="React-js.png">
+                   <label>React Js</label>
+                 </div>
+                </div>
+                <div class="checkbox-detailing">
+                  <div class="category2">
+                    <input type="checkbox" id="input-project-checkbox" name="boxes" value="java-script.png">
+                    <label>Next js</label>
+                  </div>
+                  <div class="category2">
+                    <input type="checkbox" id="input-project-checkbox" name="boxes" value="TypeScript.png">
+                    <label>TypeScript</label>
+                  </div>
+                </div>
+                  
+              <div>
+                <label>Upload Image</label>
+                <div class="input-project-image-group">
+                  <label for="input-project-image">
+                    <p>Choose<p>
+                    <img src="assets/file.png" alt="file" />
+                  </label>
+                  <input type="file" id="input-project-image" hidden />
+                </div>
+              </div>
+              <div class="button-group">
+                <button>Submit</button>
+              </div>
+              <div id="test"></div>
+            </form>
+          </div>
+        </div>
+        <hr class="line" />
+        <h1 style="text-align: center;"> MY PROJECT </h1>
+        <div id="contents" class="project-list">
+          <!-- dynamic content would be here -->
+          <div class="project-list-item">
+            <div class="project-image">
+              <img src="assets/blog-img.png" alt="" />
+            </div>
+              <div class="project-content">
+              <h5><a href="project-detail.html" target="_blank"
+              >Dumbways Mobile App- 2021</a>
+              </h5>
+              <div class="detail-project-content">
+                12 Jul 2021 22:30 WIB 
+                <div class="tampil">
+                  <img src="assets/playstore.png" alt="playstore" />
+                  <img src="assets/android.png" alt="android" />
+                  <img src="assets/java.png" alt="java" />
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, rem assumenda. Repellat quos officiis quisquam, veniam, 
+                animi similique voluptatem repellendus vero mollitia in non voluptatibus error sunt. Aut, dicta praesentium. 
+              </p>
+              <div class="btn-group">
+                <button class="btn-edit">Edit Post</button>
+                <button class="btn-post">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="myproject.js"></script>
+    </body>
+  </html>
+  

@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* navbar */
+nav{
+    display: flex;
+    background-color: #f4f3f3;
+    height: 7vh;
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+    flex: 50%;
+}
+
+.left-side{
+    padding-left: 90px;
+}
+
+.right-side{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 90px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+nav ul li{
+    display: inline;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.list-active{
+    color: #ec4d37;
+    font-weight: 700;
+}
+nav .right-side a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    background-color: #ec4d37;
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* card profile */
+.project-detail{
+  background-color: #e7e7e7;
+}
+
+.project-detail header h1{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.detail-container{
+  display: flex;
+  justify-content: center;
+}
+
+.detail{
+  display: flex;
+  width: 80%;
+  /* background-color: red; */
+}
+
+.detail .left-detail{
+  display: flex;
+  flex: 50%;
+  justify-content: right;
+}
+
+.detail .right-detail{
+  display: flex;
+  flex: 50%;
+  align-items: center;
+  justify-content: flex-end;
+  /* background-color: blue; */
+}
+
+.left-detail img{
+  width: 100%;
+}
+
+.right-detail .right-container{
+  width: 90%;
+  /* background-color: green; */
+}
+
+.right-container div label{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.right-detail .detail-technologies img{
+  width: 30px;
+}
+
+.detail-duration .date-detail{
+  display: flex;
+  align-items: center;
+}
+
+.detail-duration .time-detail{
+  display: flex;
+  align-items: center;
+}
+
+.detail-dur-container{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.detail-duration a{
+  margin-bottom: 10px;
+  margin-right: 10px;
+  font-size: 30px;
+  color: black;
+}
+
+.detail-duration p{
+  margin-bottom: 10px;
+}
+
+.detail-technologies .detail-tech-container{
+  display: flex;
+  margin-top: 20px;
+}
+
+.detail-technologies .left-tech{
+  flex: 50%;
+}
+
+.detail-technologies .right-tech{
+  flex: 50%;
+}
+
+.detail-tech-container .i-nodejs, .i-reactjs, .i-nextjs, .i-typescript{
+  display: flex;
+  align-items: center;
+}
+
+.detail-tech-container img{
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.detail-tech-container p{
+  margin-bottom: 20px;
+}
+
+.isi-konten{
+  margin-top: 40px;
+  font-size: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+  margin: 20px 50px;
+}
